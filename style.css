@@ -1,0 +1,757 @@
+
+/* 📌 Banner Section */
+.banner {
+    font-family: 'Poppins', sans-serif;
+    background: url('images/new/Sanetti\ Plateau.jpg') no-repeat center center/cover;
+    height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+}
+
+.banner-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    background-color: #2f9e5d;
+    display: inline-block;
+    padding: 7px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* 📌 Days Section */
+.days-section {
+    padding: 40px 15%;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+h1 {
+        font-family: 'Poppins', sans-serif;
+        color: #ca9a14;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #2f9e5d;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.days-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* 📌 Individual Day Styling */
+.day {
+    display: flex;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #2f9e5d;
+    position: relative;
+}
+
+/* 📌 Numbered Circle */
+.day-number {
+    margin-right: 15px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0; /* 🚀 Prevents shrinking */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 📌 Day Content */
+.day-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 📌 Special Green Text */
+.full-day {
+    color: #2f9e5d;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 1024px) {
+    .days-section {
+        padding: 40px 10%;
+    }
+
+    .banner-content h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .days-section {
+        padding: 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 28px;
+    }
+
+    .day {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .day-number {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .day-content p {
+        font-size: 14px;
+    }
+}
+
+
+#tour-wrapper{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebebeb;
+    margin-bottom: -50px;
+}
+/* Wrapper to center the container */
+.tour-wrapper {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+}
+
+/* Grid Layout: 3 columns, handles odd numbers well */
+.tour-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 25px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Tour Card Styling */
+.tour-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Title */
+.tour-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 20px;
+    flex-grow: 1;
+}
+
+/* Info Section */
+.tour-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #eee;
+}
+
+.tour-info span {
+    display: flex;
+    align-items: center;
+}
+
+.tour-info i {
+    margin-right: 6px;
+    color: #2f9e5d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tour-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%; /* 2 columns on tablets */
+    }
+   
+}
+
+@media (max-width: 600px) {
+    .tour-container {
+        grid-template-columns: 1fr; /* 1 column on mobile */    
+    }
+}
+
+/* Ensure Tour Title (h1) is Baseline Aligned */
+/* Center Tour Title (h1) */
+
+#tour3 h1 {
+    font-size: 1.5em; /* Smaller heading */
+    margin-top:15px;
+    text-align: center; /* Center the text */
+    display: block; /* Ensure full width */
+  margin-bottom: -25px;
+}
+/* Tour Card Adjustments */
+#tour3 .tour-card {
+    width: 220px; /* Make the card smaller */
+    max-width: 220px;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Reduce Image Size */
+#tour3 .tour-card img {
+    width: 100%;
+    height: 130px; /* Smaller image */
+    object-fit: cover;
+}
+
+/* Reduce Heading Size */
+#tour3 .tour-card h3 {
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* Reduce Tour Info Font Size */
+#tour3 .tour-info {
+    font-size: 11px; /* Make text smaller */
+    padding: 6px;
+}
+/* Section Styles */
+section#tour3 {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+section#tour3 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Tour Wrapper Styles */
+section#tour3 .tour-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Tour Container Styles (Grid Layout) */
+#tour3 .tour-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px; /* space between cards */
+    width: 100%;
+    max-width: 1200px; /* Prevents cards from becoming too wide */
+    margin: 0 auto; /* Centers the container */
+}
+
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 1200px) {
+    section#tour3 .tour-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section#tour3 .tour-container {
+        grid-template-columns: 1fr; /* 1 card per row on mobile */
+    }
+}
+
+
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+    #tour3 .tour-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tour3 .tour-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.banner.bale {
+    background: url('images/new/BaleMountain\ 11.jpg') no-repeat center center/cover;
+    height:50vh; /* Makes the banner fill the viewport height */
+    color: #eee;
+    display: flex; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center;
+    position: relative;
+}
+.banner.tou {
+    background: url('images/new/redwolf5.jpg') no-repeat center center/cover;
+    height:50vh; /* Makes the banner fill the viewport height */
+    color: #eee;
+    display: flex; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center;
+    position: relative;
+}
+
+
+/*---------------------------------*/
+/*TOurs New Design */
+/*---------------------------------*/
+.tours {
+    padding: 40px 15px;
+    background-color: #f9f9f9;
+  } 
+  
+  .tours__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .tours__header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative; /* Keeps it in normal flow */
+    z-index: 1; /* Low z-index to stay below side menu */
+  }
+  .tours__header h2 {
+    font-size: 2rem;
+    color: #2F4F4F;
+    margin-bottom: 8px;
+  }
+  
+  .tours__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on desktop */
+    gap: 20px;
+  }
+  
+  .tour-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: flex;
+  justify-content: space-between; /* or align items based on your design */
+  gap: 10px; /* Optional: Ensures space between buttons */
+  }
+  
+  .tour-card.hidden {
+    display: none; /* Hides cards with 'hidden' class */
+  }
+  
+  .tour-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tour-card__image1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .tour-card__content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+  }
+  
+  .tour-card__content h3 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 8px;
+  }
+  
+  .tour-card__content p {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
+  .tour-card__details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #95a5a6;
+  }
+  
+  .tour-card__details li {
+    margin-bottom: 4px;
+  }
+  
+  .tour-card__details i {
+    margin-right: 6px;
+    color: #3498db;
+  }
+  
+  .tour-card__cta1 {
+    padding: 2px 7px;
+    background: #6B8E23;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    align-self: flex-end;
+   margin-bottom: 10PX;
+   
+  }
+  
+  .tour-card__cta1:hover {
+    background: #4A7C59;
+  }
+  
+  .tours__see-more {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .see-more-btn {
+    padding: 10px 20px;
+    background: #6B8E23;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .see-more-btn:hover {
+    background: #4A7C59;
+  }
+
+/* Mobile Design (below 768px) */
+@media (max-width: 768px) {
+  .tours {
+    padding: 20px 10px; /* Reduced padding for mobile */
+  }
+
+  .tours__wrapper {
+    max-width: 100%; /* Full width on mobile */
+    padding: 0 10px; /* Add slight padding to avoid edge sticking */
+  }
+
+  .tours__header h2 {
+    font-size: 1.2rem; /* Smaller heading */
+  }
+
+  .tours__header p {
+    font-size: 0.9rem; /* Smaller subtext */
+  }
+
+  .tours__grid {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+    gap: 15px; /* Slightly smaller gap */
+  }
+
+  .tour-card__image1 img {
+   width: 90%;
+    height: 200px; /* Slightly smaller image height */
+  }
+
+  .tour-card__content {
+    padding: 12px; /* Reduced padding */
+    min-height: 180px; /* Slightly shorter card height */
+  }
+
+  .tour-card__content h3 {
+    font-size: 1.1rem; /* Slightly smaller title */
+  }
+
+  .tour-card__content p {
+    font-size: 0.8rem; /* Slightly smaller description */
+  }
+
+  .tour-card__details {
+    font-size: 0.75rem; /* Smaller details */
+  }
+
+  .tour-card__cta1 {
+    padding: 6px 12px; /* Smaller button */
+    font-size: 0.8rem; /* Smaller button text */
+  }
+
+  .tours__see-more {
+    margin-top: 15px; /* Reduced margin */
+  }
+
+  .see-more-btn {
+    padding: 8px 16px; /* Smaller button */
+    font-size: 0.9rem; /* Smaller text */
+  }
+}
+  /* Extra Small Screens (below 480px) */
+  @media (max-width: 480px) {
+    .tours__header h2 {
+      font-size: 1.3rem;
+    }
+  
+    .tours__header p {
+      font-size: 0.85rem;
+    }
+  
+    .tour-card__image img {
+      height: 100px; /* Even smaller image for tiny screens */
+    }
+  
+    .tour-card__content {
+      padding: 10px;
+      min-height: 160px;
+    }
+  
+    .tour-card__content h3 {
+      font-size: 1rem;
+    }
+  
+    .tour-card__content p {
+      font-size: 0.75rem;
+    }
+  
+    .tour-card__details {
+      font-size: 0.7rem;
+    }
+  
+    .tour-card__cta {
+      padding: 5px 10px;
+      font-size: 0.75rem;
+    }
+  
+    .see-more-btn {
+      padding: 6px 12px;
+      font-size: 0.85rem;
+    }
+  }
+ /*--------------------------------------*/
+ /*Related Tours Section */
+ /*--------------------------------------*/
+ .related-tours {
+  padding: 5px 2.5px; /* Already minimal, kept as is */
+  background-color: #f9f9f9;
+}
+
+.related-tours__wrapper {
+  max-width: 600px; /* Reduced from 800px for an even tighter layout */
+  margin-left: 160px; /* Kept your custom margin */
+}
+
+.related-tours__header {
+  text-align: center;
+  font-size: 25px; /* Reduced from 24px (1.5rem) */
+  color: #2F4F4F;
+  margin-bottom: 10px; /* Reduced from 15px */
+  margin-top: -10px; /* Kept as is */
+}
+
+.related-tours__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Still 4 cards per row */
+  gap: 8px; /* Reduced from 10px */
+}
+
+.tour-card {
+  background: #fff;
+  border-radius: 3px; /* Reduced from 4px */
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-1px); /* Smaller hover effect than 2px */
+}
+
+.tour-card__image img {
+  width: 100%;
+  height: 60px; /* Reduced from 80px */
+  object-fit: cover;
+}
+
+.tour-card__content {
+  padding: 6px; /* Reduced from 8px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90px; /* Reduced from 110px */
+}
+
+.tour-card__content h3 {
+  font-size: 0.8rem; /* Reduced from 0.9rem */
+  color: #34495e;
+  margin-bottom: 3px; /* Reduced from 4px */
+}
+
+.tour-card__details {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 6px; /* Reduced from 8px */
+  font-size: 0.55rem; /* Reduced from 0.65rem */
+  color: #95a5a6;
+}
+
+.tour-card__details li {
+  margin-bottom: 1px; /* Reduced from 2px */
+}
+
+.tour-card__details i {
+  margin-right: 3px; /* Reduced from 4px */
+  color: #3498db;
+}
+
+.tour-card__cta {
+  padding: 3px 8px; /* Reduced from 4px 10px */
+  background: #6B8E23;
+  color: #fff;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 0.55rem; /* Reduced from 0.65rem */
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+  align-self: flex-end;
+}
+
+.tour-card__cta:hover {
+  background: #4A7C59;
+}
+
+/* Mobile Design (below 768px) */
+@media (max-width: 768px) {
+  .related-tours {
+    padding: 5px 2.5px; /* Reduced from 10px 5px */
+  }
+
+  .related-tours__wrapper {
+    max-width: 100%;
+    padding: 0 2.5px; /* Reduced padding */
+    margin-left: 0; /* Removed custom margin for mobile */
+  }
+
+  .related-tours__header {
+    font-size: 22px; /* Reduced from 1rem */
+  }
+
+  .related-tours__grid {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 6px; /* Reduced from 8px */
+  }
+
+  .tour-card__image img {
+    height: 50px; /* Reduced from 70px */
+  }
+
+  .tour-card__content {
+    padding: 4px; /* Reduced from 6px */
+    min-height: 80px; /* Reduced from 100px */
+  }
+
+  .tour-card__content h3 {
+    font-size: 0.75rem; /* Reduced from 0.85rem */
+  }
+
+  .tour-card__details {
+    font-size: 0.5rem; /* Reduced from 0.6rem */
+  }
+
+  .tour-card__cta {
+    padding: 2px 6px; /* Reduced from 3px 8px */
+    font-size: 0.5rem; /* Reduced from 0.6rem */
+  }
+}
+
+/* Extra Small Screens (below 480px) */
+@media (max-width: 480px) {
+  .related-tours__header {
+    font-size: 16px; /* Reduced from 0.9rem */
+  }
+
+  .tour-card__image img {
+    height: 40px; /* Reduced from 60px */
+  }
+
+  .tour-card__content {
+    padding: 3px; /* Reduced from 5px */
+    min-height: 70px; /* Reduced from 90px */
+  }
+
+  .tour-card__content h3 {
+    font-size: 0.7rem; /* Reduced from 0.8rem */
+  }
+
+  .tour-card__details {
+    font-size: 0.45rem; /* Reduced from 0.55rem */
+  }
+
+  .tour-card__cta {
+    padding: 2px 5px; /* Reduced from 3px 6px */
+    font-size: 0.45rem; /* Reduced from 0.55rem */
+  }
+}
+
+
