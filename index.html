@@ -139,7 +139,42 @@
            </div>
        </div>
    </div>
-
+<!-- Clean Bale Mountains & Ethiopian Airlines Promotion -->
+<div class="bale-promo-clean">
+  <div class="bale-promo-content">
+    <div class="bale-promo-left">
+      <h2>Join Our Epic Hiking Tours in the Bale Mountains</h2>
+      <p class="subtitle">Fly with Ethiopian Airlines to start your adventure</p>
+      
+      <p>Contact us to book your Flight or get more information:</p>
+      <div class="contact-box">
+        <p class="contact-method">
+          <span class="contact-icon">📧</span>
+          <a href="mailto:aliyihusen993@gmail.com">aliyihusen993@gmail.com</a>
+        </p>
+        <p class="contact-method">
+          <span class="contact-icon">📱</span>
+          <a href="tel:+251912255295">+251 912 255 295</a>
+        </p>
+        <p class="contact-method">
+          <span class="contact-icon">📱</span>
+          <a href="tel:+251920930032">+251 920 930 032</a>
+        </p>
+      </div>
+      
+      <div class="button-group">
+        <a href="tours.html" class="tour-btn">View Hiking Tours</a>
+<a href="mailto:aliyihusen993@gmail.com?subject=Flight%20Booking%20for%20Bale%20Mountains%20Tour&body=Hello,%20I'm%20interested%20in%20booking%20flights%20for%20the%20Bale%20Mountains%20Tour." target="_blank" class="flight-btn" onclick="tryOpenEmail()" >Book Flights</a>      </div>
+    </div>
+    
+    <div class="bale-promo-right">
+      <div class="qr-box">
+        <img src="images/air/qrcode.png" alt="Scan to book flights">
+        <p>Scan QR to book flights</p>
+      </div>
+    </div>
+  </div>
+</div>
    <footer>
     <div class="container">
     <div class="row">
@@ -193,8 +228,25 @@
         </div>
         </div>
       </div>
-          
     </footer>
+    
+    <script>
+function tryOpenEmail() {
+  const mailtoLink = "mailto:aliyihusen993@gmail.com?subject=Flight%20Booking%20for%20Bale%20Mountains%20Tour&body=Hello,%20I'm%20interested%20in%20booking%20flights%20for%20the%20Bale%20Mountains%20Tour.";
+  try {
+    window.location.href = mailtoLink;
+    setTimeout(() => {
+      // Fallback to Gmail if mailto doesn't work after 1 second
+      window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=aliyihusen993@gmail.com&su=Flight%20Booking%20for%20Bale%20Mountains%20Tour&body=Hello,%20I'm%20interested%20in%20booking%20flights%20for%20the%20Bale%20Mountains%20Tour.";
+    }, 1000);
+  } catch (e) {
+    // Immediate fallback if mailto fails
+    window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=aliyihusen993@gmail.com&su=Flight%20Booking%20for%20Bale%20Mountains%20Tour&body=Hello,%20I'm%20interested%20in%20booking%20flights%20for%20the%20Bale%20Mountains%20Tour.";
+  }
+}
+</script>
+
+
     <script>
       document.getElementById("emailForm").addEventListener("submit", async (e) => {
         e.preventDefault();
