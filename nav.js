@@ -64,3 +64,18 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
+
+function tryOpenEmail() {
+  const mailtoLink = "mailto:info@balemountainshikingtours.com?subject=Inquiry%20about%20Bale%20Mountains%20Hiking%20Tours&body=Hello,%20I'm%20interested%20in%20learning%20more%20about%20your%20hiking%20tours.";
+  const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=info@balemountainshikingtours.com&su=Inquiry%20about%20Bale%20Mountains%20Hiking%20Tours&body=Hello,%20I'm%20interested%20in%20learning%20more%20about%20your%20hiking%20tours.";
+  try {
+    window.location.href = mailtoLink;
+    setTimeout(() => {
+      // Fallback to Gmail in the same tab if mailto doesn't work after 1 second
+      window.location.href = gmailLink;
+    }, 1000);
+  } catch (e) {
+    // Immediate fallback to Gmail in the same tab if mailto fails
+    window.location.href = gmailLink;
+  }
+}

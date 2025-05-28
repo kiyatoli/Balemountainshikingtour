@@ -2769,3 +2769,28 @@ hr {
       font-size: 1.1rem;
     }
   }
+
+  .email-id {
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.email-id a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.email-id a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.fa-solid.fa-envelope {
+  font-size: 1rem;
+}
